@@ -1,8 +1,8 @@
 %define	oname	Ri-li
 %define	name	ri-li
 %define	version	2.0.0
-%define	release	%mkrel 1
-%define	Summary	Ri-li arcade game
+%define	release	%mkrel 2
+%define	Summary	a toy wood train kit game
 
 Summary:	%{Summary}
 Name:		%{name}
@@ -22,9 +22,11 @@ Provides:	Ri-li
 Obsoletes:	Ri-li
 
 %description
-Full-featured, 8 languages: Arabic, Chinese, English, French, German,
-Japanese, Russian, Spanish. Colorful animated wood engine, 40 levels
-in this first version and 3  beautiful musics and many sound effects. 
+You drive a toy wood engine in many levels and you must
+collect all the coaches to win. Full-featured, 8 languages: Arabic,
+Chinese, English, French, German, Japanese, Russian, Spanish.
+Colorful animated wood engine, 40 levels in this first version and 3 beautiful
+musics and many sound effects. 
 
 %prep
 %setup -q -n %{oname}-%{version}
