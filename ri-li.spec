@@ -12,6 +12,7 @@ Source0:	http://surfnet.dl.sourceforge.net/sourceforge/ri-li/%{oname}-%{version}
 License:	GPL
 Group:		Games/Arcade
 URL:		http://www.ri-li.org
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	autoconf
