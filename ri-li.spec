@@ -43,15 +43,6 @@ rm -rf %{buildroot}
 
 rm -f %{buildroot}%{_gamesdatadir}/%{oname}/COPYING.Music
 
-mkdir -p %{buildroot}%{_menudir}
-cat << EOF > %{buildroot}%{_menudir}/%{name}
-?package(%{name}):command="%{_gamesbindir}/Ri_li" icon="%{oname}.png" \
-	needs="X11" \
-	section="More Applications/Games/Arcade" \
-	title="Ri-li" \
-	longtitle="%{Summary}" \
-	xdg="true"
-EOF
 
 install -m644 data/Ri-li-icon-16x16.png -D %{buildroot}%{_miconsdir}/%{oname}.png
 install -m644 data/Ri-li-icon-32x32.png -D %{buildroot}%{_iconsdir}/%{oname}.png
@@ -89,7 +80,6 @@ rm -rf $%{buildroot}
 %{_gamesdatadir}/%{oname}/Sounds/*
 %{_gamesdatadir}/%{oname}/*.ebuild
 %{_gamesdatadir}/%{oname}/language.*
-%{_menudir}/%{name}
 %{_iconsdir}/%{oname}*.png
 %{_miconsdir}/%{oname}*.png
 %{_liconsdir}/%{oname}*.png
