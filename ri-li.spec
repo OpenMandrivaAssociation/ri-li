@@ -9,6 +9,8 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	http://surfnet.dl.sourceforge.net/sourceforge/ri-li/%{oname}-%{version}.tar.bz2
+Patch0:		ri-li_makefile.in.patch
+Patch1:		ri-li_makefile.am.patch
 License:	GPL
 Group:		Games/Arcade
 URL:		http://www.ri-li.org
@@ -30,9 +32,12 @@ musics and many sound effects.
 
 %prep
 %setup -q -n %{oname}-%{version}
+%patch0 -p0
+%patch1 -p0
 dos2unix README COPYING AUTHORS NEWS COPYING.Music
 
 %build
+autoconf
 %configure	--bindir=%{_gamesbindir} \
 		--datadir=%{_gamesdatadir}
 %make
@@ -78,7 +83,7 @@ rm -rf $%{buildroot}
 %{_gamesdatadir}/%{oname}/Ri-li-icon-*.png
 %{_gamesdatadir}/%{oname}/*.ico
 %{_gamesdatadir}/%{oname}/Sounds/*
-%{_gamesdatadir}/%{oname}/*.ebuild
+#%{_gamesdatadir}/%{oname}/*.ebuild
 %{_gamesdatadir}/%{oname}/language.*
 %{_iconsdir}/%{oname}*.png
 %{_miconsdir}/%{oname}*.png
