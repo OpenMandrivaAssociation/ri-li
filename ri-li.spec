@@ -1,7 +1,7 @@
 %define	oname	Ri-li
 %define	name	ri-li
 %define	version	2.0.1
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 %define	Summary	a toy wood train kit game
 
 Summary:	%{Summary}
@@ -59,7 +59,7 @@ cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 Name=Ri-li
 Comment=Ri-li arcade game
 Exec=%{_gamesbindir}/Ri_li
-Icon=%{oname} 
+Icon=%{_gamesdatadir}/%{oname}/%{oname}-icon-48x48.png
 Terminal=false
 Type=Application
 Categories=Game;ArcadeGame;X-MandrivaLinux-MoreApplications-Games-Arcade;
