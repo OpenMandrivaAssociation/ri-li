@@ -11,7 +11,8 @@ Release:	%{release}
 Source0:	http://surfnet.dl.sourceforge.net/sourceforge/ri-li/%{oname}-%{version}.tar.bz2
 Patch0:		ri-li_makefile.in.patch
 Patch1:		ri-li_makefile.am.patch
-License:	GPL
+Patch2:		ri-li-2.0.1-gcc43.patch
+License:	GPLv2 or GPLv3
 Group:		Games/Arcade
 URL:		http://www.ri-li.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -34,11 +35,12 @@ musics and many sound effects.
 %setup -q -n %{oname}-%{version}
 %patch0 -p0
 %patch1 -p0
+%patch2 -p0
 dos2unix README COPYING AUTHORS NEWS COPYING.Music
 
 %build
-autoconf
-%configure	--bindir=%{_gamesbindir} \
+autoreconf
+%configure2_5x	--bindir=%{_gamesbindir} \
 		--datadir=%{_gamesdatadir}
 %make
 
