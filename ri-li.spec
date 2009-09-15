@@ -1,7 +1,7 @@
 %define	oname	Ri-li
 %define	name	ri-li
 %define	version	2.0.1
-%define	release	%mkrel 5
+%define	release	%mkrel 6
 %define	Summary	a toy wood train kit game
 
 Summary:	%{Summary}
