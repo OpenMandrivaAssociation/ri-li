@@ -98,3 +98,69 @@ rm -rf $%{buildroot}
 
 
 
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.0.1-6mdv2010.0
++ Revision: 442731
+- rebuild
+
+* Thu Oct 16 2008 Funda Wang <fundawang@mandriva.org> 2.0.1-5mdv2009.1
++ Revision: 294319
+- add gcc 43 patch to get it built
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - rebuild
+    - rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Mar 13 2008 Antoine Ginies <aginies@mandriva.com> 2.0.1-2mdv2008.1
++ Revision: 187467
+- fix path to icon
+
+* Mon Mar 10 2008 Antoine Ginies <aginies@mandriva.com> 2.0.1-1mdv2008.1
++ Revision: 183318
+- remove gentto ebuild
+- patch to remove gentoo
+- new release
+- release 2.0.1
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - drop old menu
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Jun 21 2007 Erwan Velu <erwan@mandriva.org> 2.0.0-2mdv2008.0
++ Revision: 42028
+- Fixing description
+
+
+* Thu Oct 26 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 2.0.0-1mdv2007.0
++ Revision: 72709
+- New version 2.0.0
+- import ri-li-1.2.0-2mdv2007.0
+
+* Tue Aug 29 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 1.2.0-2mdv2007.0
+- fix summary macro used in menu
+- fix categories in xdg menu
+- fix wrong-file-end-of-line-encoding
+- cosmetics
+
+* Tue Aug 01 2006 Jerome Soyer <saispo@mandriva.org> 1.2.0-1mdv2007.0
+- New release 1.2.0
+
+* Thu Jul 13 2006 Lenny Cartier <lenny@mandriva.com> 1.0.3-1mdv2007.0
+- add xdg menu
+- move to gamesbindir and gamesdatadir
+
+* Tue Jul 04 2006 Velu Erwan <erwan@seanodes.com> 1.0.2-1
+- Initial rpm for mandriva
+- Using ri-li package name to match Mandriva's naming policy
+
+* Fri Jun 30 2006 Dominique Roux-Serret <roux-serret@ifrance.com> 1.0.2-1
+- first RPM pakage.
+
