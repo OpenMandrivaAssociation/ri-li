@@ -14,7 +14,7 @@ Patch1:		ri-li_makefile.am.patch
 Patch2:		ri-li-2.0.1-gcc43.patch
 License:	GPLv2 or GPLv3
 Group:		Games/Arcade
-URL:		http://www.ri-li.org
+URL:		https://www.ri-li.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
