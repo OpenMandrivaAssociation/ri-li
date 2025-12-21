@@ -16,6 +16,8 @@ License:	GPLv2 or GPLv3
 Group:		Games/Arcade
 URL:		https://www.ri-li.org
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	autoconf
